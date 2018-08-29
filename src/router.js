@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Home from './views/Home.vue';
-import Agencies from './views/Agencies.vue';
-import InHouse from './views/InHouse.vue';
-import Features from './views/Features.vue';
-import Join from './views/Join.vue';
-import Blog from './views/Blog.vue';
-import More from './views/More.vue';
-import Login from './views/Login.vue';
+import Home from './views/Home/Home.vue';
+import Agencies from './views/Agencies/Agencies.vue';
+import InHouse from './views/InHouse/InHouse.vue';
+import Features from './views/Features/Features.vue';
+import Join from './views/Join/Join.vue';
+import Blog from './views/Blog/Blog.vue';
+import More from './views/More/More.vue';
+import Login from './views/Login/Login.vue';
 
 Vue.use(Router);
 
@@ -28,7 +28,7 @@ export default new Router({
     },
     {
       path: '/in-house',
-      name: 'InHouse',
+      name: 'inHouse',
       component: InHouse
     },
 

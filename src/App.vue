@@ -14,7 +14,7 @@
     <v-toolbar app class="accent" dark>
       <v-toolbar-side-icon class ="hidden-sm-and-up" v-on:click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor:pointer">DevMeetup</router-link>
+        <router-link to="/" tag="span" style="cursor:pointer">Jar</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class ="hidden-xs-only">
@@ -39,11 +39,13 @@ export default {
     return {
       drawer: null,
       menuItems: [
-        {icon:'supervisor_account', title: 'View Meetups', link:'/meetups'},
-        {icon:'room', title: 'Organize Meetup', link:'/meetup/new'},
-        {icon:'person', title: 'Profile', link:'/profile'},
-        {icon:'face', title: 'Sign up', link:'/signup'},
-        {icon:'lock_open', title: 'Sign in', link:'/signin'},
+        {icon:'supervisor_account', title: 'Agencies', link:'/agencies'},
+        {icon:'room', title: 'In-House', link:'in-house'},
+        {icon:'person', title: 'Features', link:'/features'},
+        {icon:'person', title: 'Join', link:'/join'},
+        {icon:'person', title: 'Blog', link:'/blog'},
+        {icon:'person', title: 'More', link:'/more'},
+        {icon:'lock_open', title: 'Log in', link:'/login'},
       ]
     }
   }
